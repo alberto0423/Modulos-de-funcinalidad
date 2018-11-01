@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formato Vacciones</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <header class="shadow  p-3 mb-5 bg-white rounded">
+        <h1 class="text-left , form-text , text-monospace ">Formato de solicitud de vacaciones</h1>
+    </header>
+    <h3 class="text-info">Datos del colaborador</h3>
+    <main> 
+        
+        <form action="formato.php" class="form-inline">
+            <div class="form-group mb-5">
+            <label for="Name" class="sr-only-focusable">Nombre:</label>
+                <input type="text" id="Name" class="form-control-sm" placeholder="nombre">
+                <br>
+            <label for="First_Name" class="sr-only-focusable">Apelledio Paterno:</label>
+                <input type="text" id="First_Name" class="form-control-sm" placeholder="apellido paterno">
+                <br>
+            <label for="Second_Name" class="sr-only-focusable">Apelledio Materno:</label>
+                <input type="text" placeholder="apellido materno" id="Second_Name" class="form-control-sm">
+            </div>
+            <br><br>
+            <div class="form-group m-5">
+                <label for="No_Empleado" class="sr-only-focusable">Número de Empleado:</label>
+                <input type="text " class="form-control-sm" id="No_Empleado" placeholder="no de empleado">
+                <label for="Area_Empleado" class="sr-only-focusable">Departamento</label>
+                <select name="" id="" custom-select custom-select mb-3>
+                    <option selected>Departamentos</option>
+                    <option value="">IT</option>
+                    <option value="">Finanzas</option>
+                    <option value="">Marketing</option>
+                    <option value="">Otros</option>
+                </select>
+            </div>
+            <br><br>
+
+            <div class="form-group mb-5">
+                <label for="" class="col-auto">Fecha de ingreso:</label>
+                <input type="date" class="form-control-sm">
+                <br><br>
+                <label for="" class="col-auto">Días solicitados</label>
+                <input type="number" class="form-control-sm" min="1" max="30">
+                <label for="">De: </label>
+                <input type="date" class="form-control-sm" m >
+                <label for="">Hasta</label>
+                <input type="date" class="form-control-sm">
+            </div>
+            <input type="submit" class="btn-success" >
+        </form>
+    </main>
+    
+</body>
+</html>
